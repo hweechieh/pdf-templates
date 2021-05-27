@@ -1,0 +1,58 @@
+.pnl-container {
+  margin: 50px;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: white;
+}
+
+.particulars {
+  padding-bottom: 20px;
+}
+
+th,
+tr {
+  border-bottom-color: white;
+}
+
+tr {
+  font-size: 10px;
+}
+
+p {
+  margin: 2px;
+}
+
+.heading {
+  line-height: 20px;
+}
+
+span {
+  font-family: PingFang SC;
+}
+
+.bold {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.grey-bg {
+  background: #bcbec0;
+  height: 25px;
+}
+
+.table {
+  border-bottom-width: 0px;
+  margin-top: 10px;
+}
+
+footer {
+  padding-top: 30px;
+  font-size: 8px;
+}
+
+hr:not([size]) {
+  height: 3px;
+  opacity: 100;
+  background-color: #ed1b25;
+}
