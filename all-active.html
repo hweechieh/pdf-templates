@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.webp" type="image/gif" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>My Active Alerts</title>
+</head>
+
+<body>
+  <div class="pnl-container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="images/logo.webp" width="120" height="auto">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+          <img src="images/portfolio.webp" width="160" height="auto" align="right">
+        </div>
+      </div>
+    </div>
+    <div class="container particulars">
+      <div class="row">
+        <div class="col">
+          <p class="bold"><span>客戶名稱</span> Customer Name: {name}</p>
+          <p class="bold"><span>資產組合號碼</span> Portfolio Number: {mobile}</p>
+          <p class="bold"><span>參考貨幣</span> Reference Currency: HKD</p>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div class="container portfolio-summary">
+      <div class="row">
+        <div class="col grey-bg">
+          <p class="bold heading"><span>你的活躍價格提醒</span> Your Active Alerts</p>
+        </div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"><span>訂單編號</span> Order ID</th>
+            <th scope="col"><span>股票代碼</span> Ticker</th>
+            <th scope="col"><span>設置價格</span> Set Price</th>
+            <th scope="col"><span>公司名稱</span> Company Name</th>
+            <th scope="col"><span>設置於的日期時間</span> Created On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+          <tr>
+            <th>{orderID}</th>
+            <th>{ticker}</th>
+            <td>{currency} {setPrice}</td>
+            <td>{company}</td>
+            <td>{timestamp}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p><span>星展銀行(香港)有限公司</span> DBS Bank (Hong Kong) Limited <span>(中央編號</span> CE Number:
+        AAL664)<br><span>香港中環皇后大道中九十九號中環中心十一樓</span> 11th Floor, The Center, 99 Queen's Road Central, Central, Hong Kong
+      </p>
+      <hr>
+      <p align="right"><span>星展私人銀行為星展銀行(香港)有限公司的香港私人銀行服務部門。</span><br>In Hong Kong, DBS Private Bank is the private
+        banking division of DBS Bank (Hong Kong) Limited.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
