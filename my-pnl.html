@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.webp" type="image/gif" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>PnL Template</title>
+</head>
+<body>
+  <div class="pnl-container">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="images/logo.webp" width="120" height="auto">
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+          <img src="images/portfolio.webp" width="170" height="auto" align="right">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container particulars">
+      <div class="row">
+        <div class="col-9">
+          <!-- <p class="bold"><span>客戶名稱</span> Customer Name: {name}</p> -->
+          <p class="bold"><span>資產組合號碼</span> Portfolio Number: {mobile}</p>
+          <p class="bold"><span>參考貨幣</span> Reference Currency: HKD</p>
+          <br>
+          <p class="bold">Important Note: This is NOT an account statement. Only simulated trades on DBS WhatsApp Chatbot are shown in this report and this report is for reference and simulation purpose only. This is not applicable to and is not related to any DBS Securities Account / Wealth Management Account.</p>
+          <br>
+          <p class="normal">The contents on this document including but not limited to the text, data are protected by copyright and no part of such materials may be modified, reproduced, stored in a retrieval system, transmitted (in any form or by any means), copied, distributed, reused, reposted, reverse engineered, decompiled, used for creating derivative works or used in any other way for commercial or public purposes without the Bank's prior written consent. In particular, no one may use a part of this document on any other website, or link to this  without the Bank’s prior written permission. The Bank does not guarantee the accuracy or reliability and accept no liability (whether in tort or contract or otherwise) for any loss or damage arising from any inaccuracies or omission. The information and materials contained on this document are not and are not intended to provide professional investment or other advice.</p>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+
+    <div class="container portfolio-summary">
+      <div class="row">
+        <div class="col grey-bg">
+          <p class="bold heading"><span>你的模擬交易組合總結</span> Your Simulated Trades Portfolio Summary</p>
+        </div>
+        <div class="col grey-bg date">
+          <p class="bold heading"><span>日期</span> Date: {date}</p>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><span>資產種類</span> Asset Type</th>
+            <th scope="col">USD</th>
+            <th scope="col">HKD</th>
+            <th scope="col"><span>總值</span> Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span>現金及現金投資</span><br>Cash and Cash Investments</th>
+            <td>0.00</td>
+            <td></td>
+            <td>{total-cash}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>股票</span><br>Equity</th>
+            <td>{usd-equity}</td>
+            <td></td>
+            <td>{total-equity}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>資產總值</span><br>Total Asset</th>
+            <td colspan="2">{usd-total}</td>
+            <td>{total-asset}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container portfolio-summary">
+      <div class="row">
+        <div class="col grey-bg">
+          <p class="bold heading"><span>您的表現摘要</span> Your Performance Summary</p>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><span>項目</span> Item</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span>期初值</span><br>Starting Value</th>
+            <td>{start-value}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>期末值</span><br>Ending Value</th>
+            <td>{end-value}</td>
+          </tr>
+          <tr>
+            <th scope="row"><span>損益</span><br>Profit and Loss</th>
+            <td>{total-asset}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container portfolio-summary">
+      <div class="row">
+        <div class="col grey-bg">
+          <p class="bold heading"><span>你的模擬交易總股本</span> Your Simulated Trades Total Equity</p>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><span>貨幣</span><br>Ccy</th>
+            <th scope="col"><span>數量 / 名義值</span><br>Quantity / Notional</th>
+            <th scope="col"><span>說明</span><br>Description</th>
+            <th scope="col"><span>成本價格</span><br>Cost Price</th>
+            <th scope="col"><span>最後價格日期</span><br>Last Price Date</th>
+            <th scope="col"><span>未實現損益</span><br>Unrealized P/L</th>
+            <th scope="col"><span>價值</span><br>(value in HKD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">USD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{usd-value1}</td>
+          </tr>
+          <tr>
+            <th scope="row">USD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{usd-value2}</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{usd-totalvalue}</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">HKD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{hkd-value1}</td>
+          </tr>
+          <tr>
+            <th scope="row">HKD</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{hkd-value2}</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{hkd-totalvalue}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <!-- <p><span>星展銀行(香港)有限公司</span> DBS Bank (Hong Kong) Limited <span>(中央編號</span> CE Number: AAL664)<br><span>香港中環皇后大道中九十九號中環中心十一樓</span> 11th Floor, The Center, 99 Queen's Road Central, Central, Hong Kong</p> -->
+      <hr>
+      <!-- <p align="right" ><span>星展私人銀行為星展銀行(香港)有限公司的香港私人銀行服務部門。</span><br>In Hong Kong, DBS Private Bank is the private banking division of DBS Bank (Hong Kong) Limited.</p> -->
+    </footer>
+  </div>
+</body>
+</html>

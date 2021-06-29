@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>My Active Alerts</title>
+  <title>My Active Orders</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <div class="col">
         </div>
         <div class="col">
-          <img src="images/all-active.webp" width="160" height="auto" align="right">
+          <img src="images/all-orders.webp" width="160" height="auto" align="right">
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
     <div class="container portfolio-summary">
       <div class="row">
         <div class="col grey-bg">
-          <p class="bold heading"><span>你的活躍價格提醒</span> Your Active Alerts</p>
+          <p class="bold heading"><span>你的活躍訂單</span> Your Active Orders</p>
         </div>
       </div>
       <table class="table table-striped">
@@ -49,81 +49,92 @@
           <tr>
             <th scope="col"><span>訂單編號</span> Order ID</th>
             <th scope="col"><span>股票代碼</span> Ticker</th>
-            <th scope="col"><span>設置價格</span> Set Price</th>
             <th scope="col"><span>公司名稱</span> Company Name</th>
-            <th scope="col"><span>設置於的日期時間</span> Created On</th>
+            <th scope="col"><span>買 / 賣</span> Buy / Sell</th>
+            <th scope="col"><span>數量</span> Quantity</th>
+            <th scope="col"><span>價格</span> Price</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
           <tr>
             <th>{orderID}</th>
             <th>{ticker}</th>
-            <td>{currency} {setPrice}</td>
             <td>{company}</td>
-            <td>{timestamp}</td>
+            <td>{tradeAction}</td>
+            <td>{quantity}</td>
+            <td>{currency} {price}</td>
           </tr>
         </tbody>
       </table>

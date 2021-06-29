@@ -16,7 +16,7 @@ tr {
 }
 
 tr {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 p {
@@ -32,13 +32,21 @@ span {
 }
 
 .bold {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
+}
+
+.normal {
+  font-size: 12px;
 }
 
 .grey-bg {
   background: #bcbec0;
   height: 25px;
+}
+
+.date {
+  text-align: right;
 }
 
 .table {
