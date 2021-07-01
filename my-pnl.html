@@ -51,58 +51,52 @@
       <table class="table">
         <thead>
           <tr>
+            <th scope="col"><span>日期</span> Date</th>
+            <th scope="col">{startDate}</th>
+            <th scope="col">{currentDate}</th>
+            <th scope="col">{currentDate}</th>
+            <!-- <th scope="col">{currentDate}</th>
+            <th scope="col">{currentDate}</th> -->
+          </tr>
+          <tr>
             <th scope="col"><span>資產種類</span> Asset Type</th>
+            <th scope="col">HKD</th>
             <th scope="col">USD</th>
             <th scope="col">HKD</th>
+            <!-- <th scope="col">EUR</th>
+            <th scope="col">CNY</th> -->
             <th scope="col"><span>總值</span> Total</th>
+            <th scope="col"><span>損益</span> Profit and Loss</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row"><span>現金</span><br>Cash</th>
+            <td>1,000,000.00</td>
             <td>0.00</td>
             <td></td>
+            <!-- <td></td>
+            <td></td> -->
             <td>{total-cash}</td>
           </tr>
           <tr>
             <th scope="row"><span>股票</span><br>Equity</th>
+            <td></td>
             <td>{usd-equity}</td>
             <td></td>
+            <!-- <td></td>
+            <td></td> -->
             <td>{total-equity}</td>
           </tr>
           <tr>
             <th scope="row"><span>資產總值</span><br>Total Asset</th>
-            <td colspan="2">{usd-total}</td>
+            <td>1,000,000.00</td>
+            <td>{usd-total}</td>
+            <td></td>
+            <!-- <td></td>
+            <td></td> -->
             <td>{total-asset}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="container portfolio-summary">
-      <div class="row">
-        <div class="col grey-bg">
-          <p class="bold heading"><span>您的表現摘要</span> Your Performance Summary</p>
-        </div>
-      </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col"><span>項目</span> Item</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><span>期初值</span><br>Starting Value</th>
-            <td>{start-value}</td>
-          </tr>
-          <tr>
-            <th scope="row"><span>期末值</span><br>Ending Value</th>
-            <td>{end-value}</td>
-          </tr>
-          <tr>
-            <th scope="row"><span>損益</span><br>Profit and Loss</th>
-            <td>{total-asset}</td>
+            <td>{totalPnl}</td>
           </tr>
         </tbody>
       </table>
@@ -121,7 +115,7 @@
             <th scope="col"><span>數量 / 名義值</span><br>Quantity / Notional</th>
             <th scope="col"><span>說明</span><br>Description</th>
             <th scope="col"><span>成本價格</span><br>Cost Price</th>
-            <th scope="col"><span>最後價格日期</span><br>Last Price Date</th>
+            <th scope="col"><span>最後價格日期</span><br>Last Price | Date</th>
             <th scope="col"><span>未實現損益</span><br>Unrealized P/L</th>
             <th scope="col"><span>價值</span><br>(value in HKD)</th>
           </tr>
